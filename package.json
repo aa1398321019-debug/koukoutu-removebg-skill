@@ -1,0 +1,17 @@
+{
+  "name": "koukoutu-batch-removebg-skill",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portable Playwright automation skill for koukoutu.com batch background removal.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "setup": "npm install --cache ./.npm-cache && npx --cache ./.npm-cache playwright install chromium",
+    "check": "node src/env_check.js",
+    "smoke": "node src/smoke_test.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "playwright": "^1.60.0"
+  }
+}

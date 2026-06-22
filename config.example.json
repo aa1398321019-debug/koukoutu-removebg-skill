@@ -1,0 +1,117 @@
+{
+  "url": "https://www.koukoutu.com/removebgtool/all",
+  "input_dir": "./input",
+  "output_dir": "./output",
+  "failed_dir": "./failed",
+  "logs_dir": "./logs",
+  "temp_dir": "./temp",
+  "browser_profile_dir": "./browser_profile",
+  "batch_size": 5,
+  "headless": false,
+  "retry_times": 2,
+  "download_timeout_seconds": 300,
+  "download_event_timeout_seconds": 120,
+  "download_click_retries": 3,
+  "close_ad_tabs": true,
+  "auto_confirm_download_settings": true,
+  "settings_save_download_timeout_ms": 5000,
+  "popup_wait_ms": 2500,
+  "after_popup_retry_delay_ms": 1000,
+  "manual_download_fallback": true,
+  "manual_download_timeout_seconds": 300,
+  "manual_confirm_before_download": true,
+  "process_timeout_seconds": 600,
+  "debug_snapshots": true,
+  "browser_channel": "",
+  "browser_executable_path": "",
+  "supported_extensions": [
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".webp"
+  ],
+  "selectors": {
+    "fileInputs": [
+      "input[type=\"file\"]",
+      "input[accept*=\"image\"]"
+    ],
+    "uploadTriggers": [
+      "text=上传图片",
+      "text=点击上传",
+      "text=选择图片",
+      "[aria-label*=\"上传\"]"
+    ],
+    "startProcessing": [
+      "main button:has-text(\"开始抠图\")",
+      "button:has-text(\"开始抠图\")",
+      "button:has-text(\"开始\")"
+    ],
+    "startProcessingTexts": [
+      "开始抠图",
+      "开始"
+    ],
+    "downloadAll": [
+      "text=下载全部",
+      "text=批量下载",
+      "text=全部下载",
+      "text=下载ZIP",
+      "text=ZIP",
+      "text=打包下载",
+      "[aria-label*=\"下载全部\"]",
+      "[aria-label*=\"批量下载\"]",
+      "button:has-text(\"下载全部\")",
+      "button:has-text(\"批量下载\")",
+      "button:has-text(\"全部下载\")",
+      "button:has-text(\"打包下载\")",
+      "button:has-text(\"下载ZIP\")"
+    ],
+    "downloadSingle": [
+      "text=下载高清大图(PNG)",
+      "text=下载高清大图",
+      "button:has-text(\"下载高清大图(PNG)\")",
+      "button:has-text(\"下载高清大图\")",
+      "button:has-text(\"PNG\")",
+      "main button:has-text(\"下载高清\")",
+      "a[download]"
+    ],
+    "resultCards": [
+      ".result-card",
+      ".image-card",
+      ".ant-card",
+      "[class*=\"result\"]",
+      "[class*=\"card\"]"
+    ],
+    "manualInterventionTexts": [
+      "验证码",
+      "验证",
+      "风控",
+      "安全检查",
+      "人机验证",
+      "请先登录",
+      "登录后",
+      "请登录",
+      "会员",
+      "付费",
+      "次数不足"
+    ],
+    "processingTexts": [
+      "上传中",
+      "Uploading",
+      "处理中",
+      "生成中",
+      "抠图中",
+      "等待中",
+      "正在"
+    ],
+    "notReadyTexts": [
+      "待处理",
+      "加载中",
+      "上传中",
+      "处理中",
+      "生成中",
+      "抠图中",
+      "等待中",
+      "正在"
+    ]
+  }
+}
